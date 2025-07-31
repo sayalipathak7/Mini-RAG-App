@@ -22,6 +22,17 @@ This project implements a Retrieval-Augmented Generation (RAG) system that:
 - Streamlit web interface with caching to optimize performance  
 
 ---
+## Example Output
+
+### UI Screenshot
+![App UI](media/UI.jpg)
+
+### User Query
+![User Query](media/query.jpg)
+
+### LLM Response / Output
+![LLM Result](media/result.jpg)
+---
 
 ## Setup Instructions
 
