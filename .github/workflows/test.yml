@@ -1,0 +1,33 @@
+name: GitHub Actions Minutes Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-usage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show workflow start time
+        run: |
+          echo "Workflow started at: $(date)"
+
+      - name: Simulate job for testing minutes
+        run: |
+          echo "Running a test job to consume GitHub Actions minutes..."
+          sleep 120
+          echo "Job completed after 2 minutes"
+
+      - name: Show workflow end time
+        run: |
+          echo "Workflow ended at: $(date)"
+
+      - name: Reminder for checking usage
+        run: |
+          echo "GitHub does not provide remaining minutes directly inside workflow YAML."
+          echo "To check used and remaining minutes:"
+          echo "1. Go to your repository"
+          echo "2. Click Settings"
+          echo "3. Select Billing and plans"
+          echo "4. Open Usage this month"
+          echo "There you can see total consumed and remaining GitHub Actions minutes."
