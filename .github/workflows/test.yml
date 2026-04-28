@@ -15,8 +15,8 @@ jobs:
       - name: Simulate job for testing minutes
         run: |
           echo "Running a test job to consume GitHub Actions minutes..."
-          sleep 120
-          echo "Job completed after 2 minutes"
+          sleep 180
+          echo "Job completed after 3 minutes"
 
       - name: Show workflow end time
         run: |
